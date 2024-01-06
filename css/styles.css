@@ -102,6 +102,33 @@ span{
 	max-width: 100%;
 	width: 720px;
 	height: auto;
+	animation: floatImage 1s ease-in-out infinite alternate;
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.2));
+}
+.home-text {
+    animation: floatText 1s ease-in-out infinite alternate;
+	filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.4));
+}
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+        filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.6));
+    }
+    100% {
+        transform: translateY(-10px);
+        filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.2));
+    }
+}
+
+@keyframes floatText {
+    0% {
+        transform: translateY(0);
+		filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.2));
+    }
+    100% {
+        transform: translateY(10px);
+		filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
+    }
 }
 
 
@@ -117,6 +144,12 @@ span{
 	max-width: 100%;
 	width: 540px;
 	height: auto;
+	animation: floatImage 1s ease-in-out infinite alternate;
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.2));
+}
+.about-text{
+	animation: floatText 1s ease-in-out infinite alternate;
+	filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.4));
 }
 .about-text h2{
 	font-size: var(--h2-font);
@@ -270,6 +303,83 @@ p{
     top: -130px;
     transform: translateX(-50%);
 }
+
+.portfolio-item {
+position: relative;
+overflow: hidden;
+margin: 10px;
+width: 300px;
+height: 200px;
+cursor: pointer;
+border-radius: 10px;
+}
+
+.folio-content h4{
+	color: var(--main-color);
+	font-size: var(--p-font);
+}
+
+.folio-content h2{
+	color: var(--text-color);
+	font-size: var(--h2-font);
+}
+
+.portfolio-item img {
+max-width: 100%;
+height: auto;
+vertical-align: middle;
+display: inline-block;
+object-fit: cover;
+transition: transform 0.3s ease-in-out;
+}
+.portfolio .container{
+width: 85%;
+}
+
+.grid-wrapper{
+display: grid;
+grid-gap: 10px;
+grid-template-columns: repeat(auto-fit, minmax(250px,2fr));
+grid-auto-flow: dense;
+grid-auto-rows: 200px;
+}
+.grid-wrapper > .portfolio-item{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.grid-wrapper > .portfolio-item > img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 10px;
+
+}
+
+.portfolio-item .overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.7);
+color: #fff;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+opacity: 0;
+transition: opacity 0.3s ease-in-out;
+}
+
+.portfolio-item:hover img {
+transform: scale(1.1);
+}
+
+.portfolio-item:hover .overlay {
+opacity: 1;
+}
+
 
 
 
