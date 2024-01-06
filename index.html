@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
+    <!--------StyleSheets---->
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
+    <!--------Fonts---->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -16,47 +18,45 @@
 </head>
 <body>
 
-    <!--------Header---->
-    <header class="NavBar">
-        <nav class="navbar navbar-expand-lg navbar-blur fixed-top">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav nav nav-underline mx-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#resume">Resume</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Portfolio</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Projects
-                    </a>
-                    <ul class="dropdown-menu bg-transparent">
-                      <li><a class="dropdown-item" href="#">QCalc</a></li>
-                      <li><a class="dropdown-item" href="#">XURL</a></li>
-                    </ul>
-                  </li>
-                </ul>
-                <button class="btn btn-outline-success" type="submit">Contact</button>
-              </div>
+<!--------Header---->
+  <header class="NavBar">
+      <nav class="navbar navbar-expand-lg navbar-blur fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav nav nav-underline mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#resume">Resume</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Projects
+                  </a>
+                  <ul class="dropdown-menu bg-transparent">
+                    <li><a class="dropdown-item" href="#">QCalc</a></li>
+                    <li><a class="dropdown-item" href="#">XURL</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <button class="btn btn-outline-success" type="submit">Contact</button>
             </div>
-          </nav>
-    </header>
+          </div>
+      </nav>
+  </header>
+<!--------Header end---->
 
-    <!--------Home---->
-    <section class="home" id="home">
-        <div class="home-img">
+<!--------Home---->
+  <section class="home" id="home">
+    <div class="home-img">
 			<img src="assets/main.png">
 		</div>
         
@@ -65,17 +65,20 @@
 			<h1>Leelavardhan</h1>
 			<h5>A Creative Designer <span>From India</span></h5>
 			<p>I'm creative designer based in India, and I'm very passionate <br> and dedicated to my work.</p>
+
 			<div class="social">
-				<a href="#"><i class="bi bi-github"></i></a>
-				<a href="#"><i class='bi bi-twitter' ></i></a>
-				<a href="#"><i class='bi bi-linkedin' ></i></a>
-				<a href="#"><i class='bi bi-behance' ></i></a>
+				<a href="#"><i class='bi bi-linkedin'></i></a>
+				<a href="#"><i class='bi bi-github' ></i></a>
+				<a href="#"><i class='bi bi-instagram' ></i></a>
+				<a href="#"><i class='bi bi-facebook' ></i></a>
 			</div>
-            <a class="btn btn-success" href="#about">About Me</a>
+
+      <a class="btn btn-success" href="#about">About Me</a>
 		</div>
 	</section>
+<!--------Home end---->
 
-    <!--------About---->
+<!--------About---->
 	<section class="about" id="about">
 		<div class="about-text">
 			<h3>I'm a Designer</h3>
@@ -84,14 +87,15 @@
 			<a href="#contact" class="btn btn-success">Hire Me</a>
 		</div>
 
-        <div class="about-img">
+    <div class="about-img">
 			<img src="assets/about.png">
 		</div>
 	</section>
+<!--------About end---->
 
-    <!--------Resume---->
-    <section class="resume" id="resume">
-		<div class="section-resume"> 
+<!--------Resume part1---->
+  <section class="resume" id="resume">
+		    <div class="section-resume"> 
             <div class="resume-img text-center">
                 <img src="./assets/profile.jpg">
             </div>
@@ -103,62 +107,167 @@
         </div> 	
             
         <div class="container d-flex justify-content-center">
-                <div class="resume-info w-75">
-                    <div class="info1">
-                        <h3>Profile</h3>
-                        <p>Greetings! Allow me to introduce myself and provide you with an overview of my profile:</p>
-         
-                        <ul class="info-list">
-                            <li>
-                                <strong>Fullname:</strong>
-                                <span class="d-flex align-baseline">Leelavardhan Boddapalli</span>
-                            </li>
-                            <li>
-                                <strong>Birth Date:</strong>
-                                <span class="d-flex align-baseline">February 01, 2001</span>
-                            </li>
-                            <li>
-                                <strong>Job:</strong>
-                                <span class="d-flex align-baseline">Freelancer, Front-end Web Developer</span>
-                            </li>
-                            <li>
-                                <strong>Website:</strong>
-                                <span class="d-flex align-baseline">#website</span>
-                            </li>
-                            <li>
-                                <strong>Email:</strong>
-                                <span class="d-flex align-baseline">leelavardhan9@gmail.com</span>
-                            </li>
-                        </ul>
-                    </div>
-         
-                    <div class="info2">
-                        <h3>Skills</h3>
-                        <p>Here are the skills I possess:</p>
+          <div class="resume-info w-75">
+            <div class="info1">
+                <h3>Profile</h3>
+                <p>Greetings! Allow me to introduce myself and provide you with an overview of my profile:</p>
+  
+                <ul class="info-list">
+                    <li>
+                        <strong>Fullname:</strong>
+                        <span class="d-flex align-baseline">Leelavardhan Boddapalli</span>
+                    </li>
+                    <li>
+                        <strong>Birth Date:</strong>
+                        <span class="d-flex align-baseline">February 01, 2001</span>
+                    </li>
+                    <li>
+                        <strong>Job:</strong>
+                        <span class="d-flex align-baseline">Freelancer, Front-end Web Developer</span>
+                    </li>
+                    <li>
+                        <strong>Website:</strong>
+                        <span class="d-flex align-baseline">#website</span>
+                    </li>
+                    <li>
+                        <strong>Email:</strong>
+                        <span class="d-flex align-baseline">leelavardhan9@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
     
-                            <div class="progress">
-                                <div class="progress-bar bg-primary" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">HTML 80%</div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">CSS 75%</div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-warning" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">JavaScript 85%</div>
-                            </div>	
-                            <div class="progress">
-                                <div class="progress-bar bg-info" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">Bootstrap 90%</div>
-                            </div>	
-                            <div class="progress">
-                                <div class="progress-bar bg-dark" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">React js 70%</div>
-                            </div>		
-                            <div class="progress">
-                            </div>	
-                        <p>These skills enable me to create visually appealing and user-friendly websites, ensuring a seamless experience for visitors. I continuously strive to enhance my skill set and stay updated with the latest trends and technologies in the field of front-end development.</p>
+            <div class="info2">
+                <h3>Skills</h3>
+                <p>Here are the skills I possess:</p>
+
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">HTML 80%</div>
                     </div>
-         
-                </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">CSS 75%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">JavaScript 85%</div>
+                    </div>	
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">Bootstrap 90%</div>
+                    </div>	
+                    <div class="progress">
+                        <div class="progress-bar bg-dark" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">React js 70%</div>
+                    </div>		
+                    <div class="progress">
+                      <div class="progress-bar bg-secondary" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">Java 70%</div>
+                    </div>	
+                <p>These skills enable me to create visually appealing and user-friendly websites, ensuring a seamless experience for visitors. I continuously strive to enhance my skill set and stay updated with the latest trends and technologies in the field of front-end development.</p>
+            </div>
+          </div>
         </div>
 	</section>
+<!--------Resume part1 end---->
+
+<!--------Resume part2---->
+  <section id="credentials" class="grey-section">
+
+      <div class="container w-75">
+        <div class="row section-credentials mb-5">
+          <div class="col-12 text-center">
+            <h1>More of my credentials.</h1>
+          </div>   		
+       </div>
+   
+       <div class="resume-timeline mb-3">
+         <div class="col-12 resume-header">
+           <h2 class="text-center">Work Experience</h2>
+ 
+           <div class="timeline-block">
+ 
+             <div class="timeline-header">
+               <h3>IoT - Home Automation</h3>
+               <p>July 2022 - September 2022</p>
+             </div>
+ 
+             <div class="timeline-icon">
+               <i class="bi bi-briefcase-fill"></i>
+               <div class="line1"></div>
+             </div>
+ 
+             <div class="timeline-content">
+               <h4>Emertxe Information Technologies </h4>
+               <p>Successfully completed an internship focused on Home Automation using a combination of Arduino, Picsim Lab Simulator, and Blynk application. Demonstrated proficiency in integrating the software components to create smart home solutions. Engaged in the design, simulation, and implementation of automated systems, showcasing technical skills in the field of Information Technology. Aided in enhancing the functionality and user experience through innovative technologies.</p>
+             </div>
+ 
+           </div>		
+         </div>
+       </div>
+ 
+       <div class="row resume-timeline">
+           <div class="col-12 resume-header">
+             <h2 class="text-center">Education</h2>
+             <div class="timeline-block">
+               <div class="timeline-header">
+                 <h3>Bachelor Degree</h3>
+                 <p>August 2019 - May 2023</p>
+               </div>
+ 
+               <div class="timeline-icon">
+                 <i class="bi bi-briefcase-fill"></i>
+               </div>
+ 
+               <div class="timeline-content">
+                 <h4>Indian Institute of Information Technology, Tiruchirappalli</h4>
+                 <p>Successfully completed a Bachelor's degree in Electronics and Communication Engineering at the prestigious Indian Institute of Information Technology Tiruchirappalli (IIITT). Demonstrated academic excellence with an overall CGPA of 8.17. Acquired comprehensive knowledge in the field, emphasizing a strong foundation in electronics and communication technologies.</p>
+               </div>
+ 
+             </div>
+ 
+             <div class="timeline-block">
+ 
+               <div class="timeline-header">
+                 <h3>Intermediate</h3>
+                 <p>May 2016 - March 2018</p>
+               </div>
+ 
+               <div class="timeline-icon">
+                 <i class="bi bi-briefcase-fill"></i>
+                 <div class="line2"></div>
+               </div>
+ 
+               <div class="timeline-content">
+                 <h4>FIITJEE Junior College, Visakhapatnam</h4>
+                 <p>Completed Senior Secondary School with a focus on Mathematics Physics Chemistry as my main stream, achieving 81.7% of marks.</p>
+               </div>
+ 
+             </div>
+ 
+             <div class="timeline-block">
+ 
+               <div class="timeline-header">
+                 <h3>10TH CBSE</h3>
+                 <p>May 2016</p>
+               </div>
+ 
+               <div class="timeline-icon">
+                 <i class="bi bi-briefcase-fill"></i>
+                 <div class="line2"></div>
+               </div>
+ 
+               <div class="timeline-content">
+                 <h4>Sri Prakash Vidyaniketan, Visakhapatnam</h4>
+                 <p>Attained academic excellence in the 10th grade, and secured a remarkable CGPA of 8.8.</p>
+               </div>
+ 
+             </div>
+           </div>	
+       </div>
+       <div class="text-center">
+        <a href="#contact" class="btn btn-success">Download CV</a>
+       </div>
+      </div>
+      
+  </section>
+<!--------Resume part2---->
+
+
 
 
 
@@ -166,7 +275,7 @@
     
 
     <script src="https://unpkg.com/scrollreveal"></script>
-	<script type="text/javascript" src="js/script.js"></script>
+	  <script type="text/javascript" src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
