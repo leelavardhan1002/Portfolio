@@ -22,7 +22,7 @@
   <header class="NavBar">
       <nav class="navbar navbar-expand-lg navbar-blur fixed-top">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">BL</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -42,6 +42,8 @@
                     Projects
                   </a>
                   <ul class="dropdown-menu bg-transparent">
+                    <li><a class="dropdown-item" href="#portfolio">Take me to this Section</a></li>
+                    <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="#">QCalc</a></li>
                     <li><a class="dropdown-item" href="#">XURL</a></li>
                     <li><a class="dropdown-item" href="#">StackOverFlow</a></li>
@@ -261,7 +263,7 @@
            </div>	
        </div>
        <div class="text-center">
-        <a href="#contact" class="btn btn-success">Download CV</a>
+        <a href="https://drive.google.com/file/d/1MvadvqXvCsC7ug4C2kG2yEUzVZQm3sCQ/view?usp=drive_link" target="_blank" class="btn btn-success">Download CV</a>
        </div>
       </div>
       
@@ -270,12 +272,12 @@
 
 <!--------Projects---->
 <section id="portfolio" class="portfolio">
-  <div class="container">
+  <div class="container-portfolio w-75">
     <div class="row section-intro">
       <div class="folio-content text-center">
         <h4>Portfolio</h4>
         <h2>Check Out Some of My Works.</h2>
-        <p class="lead">As a fresher, I have enthusiastically undertaken and completed three diverse projects, showcasing my commitment to learning and applying my skills effectively. Through these experiences, I have gained valuable hands-on experience in skills or technologies. I am eager to further enhance my abilities and contribute to future projects with the same level of dedication and passion.</p>
+        <p>As a fresher, I have enthusiastically undertaken and completed three diverse projects, showcasing my commitment to learning and applying my skills effectively. Through these experiences, I have gained valuable hands-on experience in skills or technologies. I am eager to further enhance my abilities and contribute to future projects with the same level of dedication and passion.</p>
       </div>
     </div>
   
@@ -285,7 +287,8 @@
           <img src="./assets/XURL.jpg" alt="XURL">
           <div class="overlay">
             <h3>XURL</h3>
-            <p>URL Shortner using Java</p>
+            <p class="mb-3">URL Shortner using Java</p>
+            <a class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modalXURL" href="">More Info</a>
           </div>
         </div>
       
@@ -293,7 +296,8 @@
           <img src="./assets/QCalc.jpg" alt="QCalc">
           <div class="overlay">
             <h3>QCalc</h3>
-            <p>Scientific Calculator using Java</p>
+            <p class="mb-3">Scientific Calculator using Java</p>
+            <a class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modalQCalc" href="">More Info</a>
           </div>
         </div>
     
@@ -301,7 +305,8 @@
           <img src="./assets/StackOverFlow.jpg" alt="StackOverFlowClone">
           <div class="overlay">
             <h3>Stack OverFlow Clone</h3>
-            <p>Stack OverFlow Clone Using React Js</p>
+            <p class="mb-3">Stack OverFlow Clone Using React Js</p>
+            <a class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modalStackOverflow" href="">More Info</a>
           </div>
         </div>
       </div>
@@ -309,18 +314,77 @@
     
     </div>
   </div>
-  
 
+    <!-- Modals -->
+  <div class="modal fade" id="modalXURL" tabindex="-1" role="dialog" aria-labelledby="modalXURLLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalXURLLabel">XURL</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/XURL.jpg" class="img-fluid" alt="XURL">
+          <p class="mb-3">Created a short url library with required methods. Implemented register method to take a long URL and return a shorter URL. Implemented hit count to track number of long URL lookups.</p>
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-outline-success" href="https://github.com/leelavardhan1002/XURL.git" target="_blank">Go to Repo</a>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="modal fade" id="modalQCalc" tabindex="-1" role="dialog" aria-labelledby="modalQCalcLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalQCalcLabel">QCalc</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/QCalc.jpg" class="img-fluid" alt="QCalc">
+          <p class="mb-3">Made use of different features of VSCode IDE to build the project. Built feature of a calculator by following OOPS Principles. Wrote unit tests to ensure edge cases are handled correctly. Fixed the bugs in the implementation of newly introduced features of the calculator.</p>
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-outline-success" href="https://github.com/leelavardhan1002/QCalc.git" target="_blank">Go to Repo</a>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalStackOverflow" tabindex="-1" role="dialog" aria-labelledby="modalStackOverflowLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalStackOverflowCloneLabel">Stack OverFlow Clone</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/StackOverFlow.jpg" class="img-fluid" alt="StackOverflowClone">
+          <p class="mb-3">As part of my ongoing commitment to enhancing my web development skills, I undertook the development of a StackOverflow clone. This project involved creating a platform that mimics the fundamental functionalities of StackOverflow, a widely-used community-driven question and answer website.</p>
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-outline-success" href="https://github.com/leelavardhan1002/StackOverflowClone.git" target="_blank">Go to Repo</a>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <!--------Projects end---->
 
+<footer class="bg-light py-4 text-center">
+  <p class="mb-0 text-center">If you like my Portfolio or my cat in the Photo please let me know...</p>
+  <p class="mb-0 text-center">Contact: leelavardhan9@gmail.com | Phone: +91 (918) 236-3131</p>
+  <p class="mt-3 mb-0 text-center">&copy; 2024 Leelavardhan Boddapalli. All rights reserved.</p>
+</footer>
 
 
 
 
 
-    
 
     <script src="https://unpkg.com/scrollreveal"></script>
 	  <script type="text/javascript" src="js/script.js"></script>
