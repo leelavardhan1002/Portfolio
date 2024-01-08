@@ -44,18 +44,44 @@
                   <ul class="dropdown-menu bg-transparent">
                     <li><a class="dropdown-item" href="#portfolio">Take me to this Section</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">QCalc</a></li>
-                    <li><a class="dropdown-item" href="#">XURL</a></li>
-                    <li><a class="dropdown-item" href="#">StackOverFlow</a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalQCalc">QCalc</a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalXURL">XURL</a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalStackOverflow">StackOverFlow</a></li>
                   </ul>
                 </li>
               </ul>
-              <button class="btn btn-outline-success" type="submit">Contact</button>
+              <button class="btn btn-outline-success" type="submit" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</button>
             </div>
           </div>
       </nav>
   </header>
 <!--------Header end---->
+
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactModalLabel">Contact Me</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Contact Form -->
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="99272ce8-558c-4627-96e8-76318a174a02">
+          <label for="name">Name</label>
+          <input class="form-control mb-3" placeholder="Elon Musk" type="text" name="name" required>
+          <label for="email">Email</label>
+          <input type="email" class="form-control mb-3" placeholder="example@outlook.com" name="email" required>
+          <label for="message">Message</label>
+          <textarea name="message" placeholder="Type your message here..." class="form-control mb-3" required></textarea>
+          <div class="h-captcha" data-captcha="true"></div>
+          <button class="btn btn-success" type="submit">Submit Form</button>
+        </form>
+        <!-- End Contact Form -->
+      </div>
+    </div>
+  </div>
+</div>
 
 <!--------Home---->
   <section class="home" id="home">
@@ -70,10 +96,10 @@
 			<p>I'm creative designer based in India, and I'm very passionate <br> and dedicated to my work.</p>
 
 			<div class="social">
-				<a href="#"><i class='bi bi-linkedin'></i></a>
-				<a href="#"><i class='bi bi-github' ></i></a>
-				<a href="#"><i class='bi bi-instagram' ></i></a>
-				<a href="#"><i class='bi bi-facebook' ></i></a>
+				<a href="https://www.linkedin.com/in/leelavardhan-boddapalli-6736b3220" target="_blank"><i class='bi bi-linkedin'></i></a>
+				<a href="https://github.com/leelavardhan1002" target="_blank"><i class='bi bi-github' ></i></a>
+				<a href="https://www.instagram.com/leelavardhan1002" target="_blank"><i class='bi bi-instagram' ></i></a>
+				<a href="https://www.facebook.com/Leelavardhan159" target="_blank"><i class='bi bi-facebook' ></i></a>
 			</div>
 
       <a class="btn btn-success" href="#about">About Me</a>
@@ -87,7 +113,7 @@
 			<h3>I'm a Designer</h3>
 			<h2>I Can Design Anything You Want</h2>
 			<p>Hello there! I'm a web designer, and I'm very passionate and dedicated to my work. I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.</p>
-			<a href="#contact" class="btn btn-success">Hire Me</a>
+			<a href="" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#contactModal">Hire Me</a>
 		</div>
 
     <div class="about-img">
@@ -213,7 +239,7 @@
                </div>
  
                <div class="timeline-icon">
-                 <i class="bi bi-briefcase-fill"></i>
+                <i class="bi bi-mortarboard-fill"></i>
                </div>
  
                <div class="timeline-content">
@@ -231,7 +257,7 @@
                </div>
  
                <div class="timeline-icon">
-                 <i class="bi bi-briefcase-fill"></i>
+                 <i class="bi bi-mortarboard-fill"></i>
                  <div class="line2"></div>
                </div>
  
@@ -250,7 +276,7 @@
                </div>
  
                <div class="timeline-icon">
-                 <i class="bi bi-briefcase-fill"></i>
+                 <i class="bi bi-mortarboard-fill"></i>
                  <div class="line2"></div>
                </div>
  
